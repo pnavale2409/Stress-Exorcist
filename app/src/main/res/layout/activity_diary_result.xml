@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiaryResultActivity"
+    android:background="@drawable/green_gradient">
+
+    <RelativeLayout
+        android:id="@+id/diary_result_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_gradient">
+
+        <TextView
+            android:id="@+id/title0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/courgette"
+            android:text="Dear User,"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/result_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title0"
+            android:layout_marginStart="23dp"
+
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/courgette"
+            android:text="Your mood look great today. Why stop here have a more better mental health by participating in activies below."
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+      <!--  <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/result_box"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/white" />-->
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/diary_result_top">
+
+
+    </RelativeLayout>
+
+
+<ScrollView
+    android:layout_below="@id/diary_result_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:background="@drawable/home_center_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="30 Days anaylsis"
+                android:textColor="@color/back_green"
+                android:textSize="20sp" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:layout_below="@id/t1"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/pie_chart"
+                android:layout_width="320dp"
+                android:layout_height="320dp"
+                android:layout_marginBottom="30dp"
+                />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7 Days anaylsis"
+                android:textSize="20sp"
+                android:layout_margin="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/lato_bold"/>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:layout_below="@id/t2"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/pie_chart2"
+                android:layout_width="320dp"
+                android:layout_height="320dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
+    <!-- <TextView
+         android:id="@+id/title1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/line1"
+         android:layout_marginStart="20dp"
+         android:layout_marginBottom="10dp"
+         android:fontFamily="@font/lato_bold"
+         android:text="Recommendation"
+         android:textColor="@color/white"
+         android:textSize="20sp" />-->
+    <!-- <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@id/title1">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:paddingBottom="40dp">
+
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginRight="20dp"
+                 android:background="@drawable/list_items_back"
+                 android:padding="12dp">
+
+                 <ImageView
+                     android:id="@+id/iv1"
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/meditation" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerVertical="true"
+                     android:layout_toEndOf="@id/iv1"
+                     android:orientation="vertical">
+
+                     <TextView
+
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+
+                         android:fontFamily="@font/lato"
+                         android:paddingLeft="20dp"
+                         android:text="Meditaion"
+                         android:textColor="@color/black"
+                         android:textSize="20sp" />
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="3dp"
+                         android:layout_toEndOf="@id/iv1"
+                         android:fontFamily="@font/lato"
+                         android:paddingLeft="20dp"
+                         android:text="Relax your Mind and Body ..."
+                         android:textColor="@color/back_green"
+                         android:textSize="15sp" />
+                 </LinearLayout>
+
+
+             </RelativeLayout>
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginRight="20dp"
+                 android:background="@drawable/list_items_back"
+                 android:padding="12dp">
+
+                 <ImageView
+                     android:id="@+id/iv2"
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/musical_note" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerVertical="true"
+                     android:layout_toEndOf="@id/iv2"
+                     android:orientation="vertical">
+
+                     <TextView
+
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+
+                         android:fontFamily="@font/lato"
+                         android:paddingLeft="20dp"
+                         android:text="Calm Music"
+                         android:textColor="@color/black"
+                         android:textSize="20sp" />
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="3dp"
+                         android:layout_toEndOf="@id/iv1"
+                         android:fontFamily="@font/lato"
+                         android:paddingLeft="20dp"
+                         android:text="Listern to mind relaxing music ..."
+                         android:textColor="@color/back_green"
+                         android:textSize="15sp" />
+                 </LinearLayout>
+
+
+             </RelativeLayout>
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginRight="20dp"
+                 android:background="@drawable/list_items_back"
+                 android:padding="12dp">
+
+                 <ImageView
+                     android:id="@+id/iv3"
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/funny_lol" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerVertical="true"
+                     android:layout_toEndOf="@id/iv3"
+                     android:orientation="vertical">
+
+                     <TextView
+
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+
+                         android:fontFamily="@font/lato"
+                         android:paddingLeft="20dp"
+                         android:text="Funny Videos"
+                         android:textColor="@color/black"
+                         android:textSize="20sp" />
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="3dp"
+                         android:layout_toEndOf="@id/iv1"
+                         android:fontFamily="@font/lato"
+                         android:paddingLeft="20dp"
+                         android:text="Make yourself laugh ... HAHAHA!"
+                         android:textColor="@color/back_green"
+                         android:textSize="15sp" />
+                 </LinearLayout>
+
+
+             </RelativeLayout>
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginRight="20dp"
+                 android:background="@drawable/list_items_back"
+                 android:padding="12dp">
+
+                 <ImageView
+                     android:id="@+id/iv4"
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/yoga_lotus" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerVertical="true"
+                     android:layout_toEndOf="@id/iv4"
+                     android:orientation="vertical">
+
+                     <TextView
+
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+
+                         android:fontFamily="@font/lato"
+                         android:paddingLeft="20dp"
+                         android:text="Yoga"
+                         android:textColor="@color/black"
+                         android:textSize="20sp" />
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="3dp"
+                         android:layout_toEndOf="@id/iv1"
+                         android:fontFamily="@font/lato"
+                         android:paddingLeft="20dp"
+                         android:text="Strech out and stress out ..."
+                         android:textColor="@color/back_green"
+                         android:textSize="15sp" />
+                 </LinearLayout>
+
+
+             </RelativeLayout>
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginRight="20dp"
+                 android:background="@drawable/list_items_back"
+                 android:padding="12dp">
+
+                 <ImageView
+                     android:id="@+id/iv5"
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/excercise" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerVertical="true"
+                     android:layout_toEndOf="@id/iv5"
+                     android:orientation="vertical">
+
+                     <TextView
+
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+
+                         android:fontFamily="@font/lato"
+                         android:paddingLeft="20dp"
+                         android:text="Exercise"
+                         android:textColor="@color/black"
+                         android:textSize="20sp" />
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="3dp"
+                         android:layout_toEndOf="@id/iv1"
+                         android:fontFamily="@font/lato"
+                         android:paddingLeft="20dp"
+                         android:text="Stay fit physically and mentally "
+                         android:textColor="@color/back_green"
+                         android:textSize="15sp" />
+                 </LinearLayout>
+
+
+             </RelativeLayout>
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginRight="20dp"
+                 android:background="@drawable/list_items_back"
+                 android:padding="12dp">
+
+                 <ImageView
+                     android:id="@+id/iv6"
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/expert_icon" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerVertical="true"
+                     android:layout_toEndOf="@id/iv6"
+                     android:orientation="vertical">
+
+                     <TextView
+
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+
+                         android:fontFamily="@font/lato"
+                         android:paddingLeft="20dp"
+                         android:text="Expert Advice"
+                         android:textColor="@color/black"
+                         android:textSize="20sp" />
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="3dp"
+                         android:layout_toEndOf="@id/iv1"
+                         android:fontFamily="@font/lato"
+                         android:paddingLeft="20dp"
+                         android:text="Share your problem with an expert"
+                         android:textColor="@color/back_green"
+                         android:textSize="15sp" />
+                 </LinearLayout>
+
+
+             </RelativeLayout>
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginRight="20dp"
+                 android:background="@drawable/list_items_back"
+                 android:padding="12dp">
+
+                 <ImageView
+                     android:id="@+id/iv7"
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/motivation" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerVertical="true"
+                     android:layout_toEndOf="@id/iv7"
+                     android:orientation="vertical">
+
+                     <TextView
+
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+
+                         android:fontFamily="@font/lato"
+                         android:paddingLeft="20dp"
+                         android:text="Motivation"
+                         android:textColor="@color/black"
+                         android:textSize="20sp" />
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="3dp"
+                         android:layout_toEndOf="@id/iv1"
+                         android:fontFamily="@font/lato"
+                         android:paddingLeft="20dp"
+                         android:text="Cheer up ! and stay motivated"
+                         android:textColor="@color/back_green"
+                         android:textSize="15sp" />
+                 </LinearLayout>
+
+
+             </RelativeLayout>
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginRight="20dp"
+                 android:background="@drawable/list_items_back"
+                 android:padding="12dp">
+
+                 <ImageView
+                     android:id="@+id/iv8"
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/test_icon" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerVertical="true"
+                     android:layout_toEndOf="@id/iv8"
+                     android:orientation="vertical">
+
+                     <TextView
+
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+
+                         android:fontFamily="@font/lato"
+                         android:paddingLeft="20dp"
+                         android:text="Depression Test"
+                         android:textColor="@color/black"
+                         android:textSize="20sp" />
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="3dp"
+                         android:layout_toEndOf="@id/iv1"
+                         android:fontFamily="@font/lato"
+                         android:paddingLeft="20dp"
+                         android:text="Take a test for better analysis"
+                         android:textColor="@color/back_green"
+                         android:textSize="15sp" />
+                 </LinearLayout>
+
+
+             </RelativeLayout>
+
+         </LinearLayout>
+     </ScrollView>-->
+
+
+</RelativeLayout>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_gradient"
+    tools:context=".TestResultActivity">
+
+    <RelativeLayout
+        android:id="@+id/test_result_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_gradient">
+
+        <TextView
+            android:id="@+id/title0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/courgette"
+            android:text="Dear User,"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/test_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title0"
+            android:layout_marginStart="23dp"
+
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/courgette"
+            android:text="Your mood look great today. Why stop here have a more better mental health by participating in activies below."
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <!--  <View
+              android:id="@+id/line1"
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:layout_below="@id/result_box"
+              android:layout_marginStart="20dp"
+              android:layout_marginTop="20dp"
+              android:layout_marginEnd="20dp"
+              android:layout_marginBottom="30dp"
+              android:background="@color/white" />-->
+
+
+    </RelativeLayout>
+
+    <!-- <TextView
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="40dp"
+         android:id="@+id/tool_bar"
+         android:text="Test Result"
+         android:textColor="@color/back_green"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="25sp" />-->
+
+    <RelativeLayout
+        android:background="@drawable/home_center_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/test_result_top">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:id="@+id/t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Test Score Analysis"
+                    android:textColor="@color/back_green"
+                    android:textSize="20sp" />
+
+
+                <RelativeLayout
+                    android:background="@drawable/test_timer"
+                    android:layout_below="@id/t1"
+                    android:id="@+id/circle_rv"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="20dp">
+                    <RelativeLayout
+                        android:layout_centerInParent="true"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/test_score_circle"
+                       >
+
+                        <TextView
+                            android:id="@+id/user_score_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="30sp" />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:id="@+id/v1"
+                    android:layout_margin="20dp"
+                    android:background="@color/greytext"
+                    android:layout_below="@id/circle_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/score_centre"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/v1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gradient_round_btn"
+                        android:fontFamily="@font/lato"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="30dp"
+                        android:paddingRight="0dp"
+                        android:paddingBottom="30dp"
+                        android:gravity="center"
+                        android:text="10 questions\nAttempted"
+                        android:textColor="#FFF"
+                        android:textSize="20sp"
+                        android:transitionName="next_btn" />
+
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/red_gradient_round"
+                        android:fontFamily="@font/lato"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="30dp"
+                        android:paddingRight="0dp"
+                        android:paddingBottom="30dp"
+                        android:gravity="center"
+                        android:text="0 questions\nSkipped"
+                        android:textColor="#FFF"
+                        android:textSize="20sp"
+                        android:transitionName="next_btn" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_margin="20dp"
+                    android:background="@color/greytext"
+                    android:layout_below="@id/score_centre"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <TextView
+                    android:layout_below="@id/score_centre"
+                    android:id="@+id/t2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Your Score"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_gravity="end"
+                    android:id="@+id/test_score"
+                    android:layout_marginStart="30dp"
+                    android:layout_below="@id/t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="30/30"/>
+
+
+                <ProgressBar
+                    android:id="@+id/test_progress_bar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/t2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:progress="60"
+                    android:progressBackgroundTint="#fff"
+                    android:progressTint="#00c6ff" />
+
+
+                <View
+                    android:layout_margin="20dp"
+                    android:background="@color/greytext"
+                    android:layout_below="@id/test_progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="200dp"/>
+                <View
+                    android:layout_margin="20dp"
+                    android:background="@color/white"
+                    android:layout_below="@id/test_progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="90dp"/>
+
+                <View
+                    android:layout_margin="20dp"
+                    android:background="@color/white"
+                    android:layout_below="@id/test_progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="90dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+        <TextView
+            android:id="@+id/exit_btn"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_round_btn"
+            android:text="EXIT"
+            android:textColor="@color/white"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

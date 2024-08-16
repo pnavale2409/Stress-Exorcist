@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FY_Project</string>
+
+
+    <string name="quote1">\"In my opinion, our health care system has failed when a doctor fails to treat an illness that is treatable.\"</string>
+
+
+
+    <string-array name="types">
+        <item>Psychiatrist</item>
+        <item>Psychologist</item>
+        <item>Psychoanalyst</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,71 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable-v24/chat_user_message_back.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable-v24/color_cursor_white.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable-v24/diary_box_back.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable-v24/drawable_circle_dark_blue.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable-v24/google_sign_btn.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable-v24/gradient_round_btn.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable-v24/green_btn_back.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable-v24/green_gradient.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable-v24/home_center_back.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable-v24/ic_baseline_arrow_back_ios_24.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable-v24/ic_baseline_format_bold_24.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable-v24/ic_baseline_format_underlined_24.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable-v24/ic_baseline_menu_24.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable-v24/ic_baseline_people_24.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable-v24/ic_baseline_sentiment_very_satisfied_24.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable-v24/ic_baseline_today_24.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable-v24/list_items_back.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable-v24/login_btn_back.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable-v24/red_gradient_round.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable-v24/signup_gradient_btn.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable-v24/yellow_gradient_round.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable/chat_centre_back.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable/home_round_btn_background.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable/ic_baseline_bookmark_24.xml" value="0.1" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable/ic_baseline_content_copy_24.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable/msgbox_back.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable/progressbar_horizontal_background.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable/psychiatrist_centre_back.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable/requestbtn_back.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable/take_a_test_center_back.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable/test_options_back.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable/test_timer.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable/workers_category_btn_select.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable/workers_category_btn_unselect.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/drawable/workers_list_model_background.xml" value="0.112" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/font/.xml" value="0.20666666666666667" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/layout/activity_chat.xml" value="0.1796875" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/layout/activity_dairy_result.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/layout/activity_diary_result.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/layout/activity_home.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/layout/activity_login.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/layout/activity_main.xml" value="0.165625" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/layout/activity_psychiatrist.xml" value="0.1796875" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/layout/activity_psychiatrist_profile.xml" value="0.1796875" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/layout/activity_settings.xml" value="0.1796875" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/layout/activity_signup.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/layout/activity_take_atest.xml" value="0.1796875" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/layout/activity_test.xml" value="0.22" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/layout/activity_test_result.xml" value="0.1796875" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/layout/custom_dialog.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/layout/home_drawer_layout.xml" value="0.1796875" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/layout/model_chat.xml" value="0.1796875" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/layout/model_psychiatrist.xml" value="0.1796875" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/layout/nav_header.xml" value="0.1796875" />
+        <entry key="..\:/Users/prath/AndroidStudioProjects/FY_Project/app/src/main/res/menu/nav_menu.xml" value="0.165625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PsychiatristProfileActivity"
+    android:id="@+id/drawer_layout"
+    tools:openDrawer="star">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/green_gradient"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp"
+
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/psychiatrist_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/lato_bold"
+                            android:text="Psychiatrist Name"
+                            android:textAllCaps="true"
+                            android:textColor="#fff"
+                            android:textSize="22sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/home_menu_btn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="15dp"
+                            android:background="#00000000">
+
+                            <ImageView
+                                android:id="@+id/menu_btn"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_baseline_menu_24" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@id/tv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv1"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/lato"
+                        android:justificationMode="inter_word"
+                        android:text="Board-certified Psychiatrist with 8 years of experience working with an ethnoculturally diverse population; comfortable working with individuals with severe problems such as suicidality and major mental illnesses. Excellent background in psychopharmacology and interest in responsibly measuring outcomes of new modalities. Adept communicator able to engage with patients and effectively partner with other team members within complex organizational structures."
+                        android:textColor="#fff"
+                        android:textSize="19sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/top"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/take_a_test_center_back"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/worker_image"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:background="@drawable/home_round_btn_background"
+                            android:clipToOutline="true"
+                            android:src="@drawable/dummy1" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_toEndOf="@id/worker_image"
+                            android:paddingTop="20dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/vampiro_one"
+                                android:gravity="center_vertical"
+                                android:padding="8dp"
+                                android:text="@string/quote1"
+                                android:textColor="#a8e063"
+
+                                android:textSize="18dp" />
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/greyline"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/worker_image"
+                            android:layout_marginBottom="0dp"
+                            android:background="#ecedea" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/greyline"
+                            android:layout_margin="15dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_marginStart="3dp"
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:src="@drawable/ic_baseline_fiber_manual_record_24" />
+
+                                <TextView
+                                    android:id="@+id/workers_age"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/lato_bold"
+                                    android:text="28"
+                                    android:textSize="17sp" />
+
+                                <ImageView
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:src="@drawable/ic_baseline_fiber_manual_record_24" />
+
+                                <TextView
+                                    android:id="@+id/experience"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/lato_bold"
+                                    android:text="6 years paid experience"
+                                    android:textSize="17sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/rating"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:drawableStart="@drawable/ic_baseline_star_rate_24"
+                                    android:drawablePadding="7dp"
+                                    android:fontFamily="@font/lato_bold"
+                                    android:gravity="center_vertical"
+                                    android:text="4.50"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:drawablePadding="8dp"
+                                    android:fontFamily="@font/lato"
+                                    android:gravity="center_vertical"
+                                    android:text=" (215 reviews)"
+                                    android:textSize="17sp" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="56dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/families_cared"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:drawableStart="@drawable/ic_baseline_emoji_emotions_24"
+                                    android:drawablePadding="8dp"
+                                    android:fontFamily="@font/lato_bold"
+                                    android:gravity="center_vertical"
+                                    android:text="Cared for 192 people"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/salary"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="2dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="end|center_vertical"
+                                    android:text="₹ 2500/Mon"
+                                    android:textColor="#a8e063"
+                                    android:textSize="20sp" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+               <!-- <RelativeLayout
+
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/green_gradient" />
+                </RelativeLayout>-->
+            </LinearLayout>
+        </ScrollView>
+        <RelativeLayout
+            android:id="@+id/send_req_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/requestbtn_back"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="SEND REQUEST"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        app:itemIconTint="@color/back_green"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

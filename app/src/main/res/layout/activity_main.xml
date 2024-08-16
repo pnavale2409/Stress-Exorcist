@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/green_gradient">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <ImageView
+        android:layout_alignParentEnd="true"
+        android:id="@+id/menu_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_baseline_more_vert_24" />
+
+
+    <TextView
+        android:id="@+id/week_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_btn"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="@font/lato_bold"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/week_day"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/lato"
+        android:text=""
+        android:textColor="#ececec"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/diary_options"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/date_tv">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@id/predict_btn"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:weightSum="4">
+
+
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_today_24" />
+
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_sentiment_very_satisfied_24" />
+
+            <ImageView
+                android:id="@+id/clear_thoughts"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_clear_all_24" />
+
+
+            <ImageView
+                android:id="@+id/copy_clipboard"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_content_copy_24" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/predict_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="-3dp"
+            android:background="@drawable/login_btn_back"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingTop="10dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="10dp"
+            android:text="SAVE"
+            android:textColor="#56ab2f"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/diary_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/diary_options"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/diary_box_back"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="80dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp">
+
+
+            <EditText
+                android:id="@+id/thoughts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="#00000000"
+                android:gravity="top"
+                android:hint="Please write about your's Todays Thoughts here ..."
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:lineHeight="55dp"
+                android:lines="8"
+                android:maxLength="100"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="20sp"
+                android:visibility="visible" />
+
+            <View
+                android:id="@+id/u1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="45dp"
+                android:background="#d3d3d3" />
+
+
+            <View
+                android:id="@+id/u2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/u1"
+                android:layout_marginTop="55dp"
+                android:background="#d3d3d3" />
+
+            <View
+                android:id="@+id/u3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/u2"
+                android:layout_marginTop="55dp"
+                android:background="#d3d3d3" />
+
+            <View
+                android:id="@+id/u5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/u3"
+                android:layout_marginTop="55dp"
+                android:background="#d3d3d3" />
+
+            <View
+                android:id="@+id/u6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/u5"
+                android:layout_marginTop="55dp"
+                android:background="#d3d3d3" />
+
+            <View
+                android:id="@+id/u7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/u6"
+                android:layout_marginTop="55dp"
+                android:background="#d3d3d3" />
+
+            <View
+                android:id="@+id/u8"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/u7"
+                android:layout_marginTop="55dp"
+                android:background="#d3d3d3" />
+
+            <View
+                android:id="@+id/u9"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/u8"
+                android:layout_marginTop="55dp"
+                android:background="#d3d3d3" />
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/mood_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="top"
+                android:paddingLeft="8dp"
+                android:paddingBottom="10dp"
+                android:text="Mood "
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_toEndOf="@id/mood_tv"
+                android:orientation="horizontal"
+                android:paddingLeft="0dp"
+                android:paddingRight="20dp"
+                android:weightSum="5">
+
+                <ImageView
+                    android:id="@+id/smily_emoji"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/emoji_smile" />
+
+                <ImageView
+                    android:id="@+id/cry_emoji"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/emoji_cry" />
+
+                <ImageView
+                    android:id="@+id/angry_emoji"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/emoji_angry" />
+
+                <ImageView
+                    android:id="@+id/sad_emoji"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/emoji_sad" />
+                <ImageView
+                    android:id="@+id/very_happy_emoji"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/emoji_love" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>

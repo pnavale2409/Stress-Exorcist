@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:paddingTop="8dp">
+
+    <TextView
+        android:minWidth="80dp"
+        android:maxWidth="300dp"
+        android:visibility="gone"
+        android:id="@+id/chat_user_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="Hello There"
+        android:background="@drawable/chat_user_message_back"/>
+
+    <TextView
+        android:minWidth="80dp"
+        android:maxWidth="300dp"
+        android:visibility="gone"
+        android:id="@+id/user_message"
+        android:text="Hello there "
+        android:textColor="#fff"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-20dp"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/msgbox_back"/>
+
+</RelativeLayout>
